@@ -195,7 +195,7 @@ def the_benchmaker(spec_list, warmup):
     
     #if it is a warmup round, don,t log the data in benchmark result file the file
     if warmup == False:
-        with open("benchmark_results_testing_final3.csv", "a", newline="") as f:
+        with open("benchmark_results_testing_final2.csv", "a", newline="") as f:
             writer = csv.writer(f)
             writer.writerow([actual_workers, total_cores, cores_per_executor , RAM, runtime])
     
